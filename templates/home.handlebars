@@ -1,0 +1,13 @@
+<h2>Welcome to my simple movie site. <br>
+Here you will find movies for all ages. </h2>
+
+<h2>All our movies!</h2>
+<ul class="allMovies">
+{{#each moviesId }}
+  <li>
+    <a href="/movies/{{ this.id }}">
+      {{ this.title }}
+    </a>
+  </li>
+{{/each}}
+</ul>
